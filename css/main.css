@@ -1,0 +1,541 @@
+@import url("https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+}
+
+html {
+  font-family: "Georama", sans-serif;
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: inline;
+}
+
+p {
+  font-size: 1.5rem;
+  line-height: 3rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+span {
+  color: #797878;
+  font-size: 1rem;
+}
+
+a {
+  color: #463232;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+h1 {
+  color: #463232;
+}
+
+.header-menu li {
+  padding: 3rem 3rem;
+  color: #463232;
+  font-size: 1.5rem;
+}
+
+.header-icons li {
+  padding: 1rem 1rem;
+  font-size: 1.5rem;
+}
+
+.banner {
+  background-color: #f7d5c3;
+  height: 100vh;
+  background-image: url(../images/p1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.header {
+  background-color: #f7d5c3;
+  padding: 2rem 0;
+}
+
+.banner h1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 3rem 0;
+  font-size: 5rem;
+}
+
+.search-btn {
+  background-color: #463232;
+  color: #fff;
+  height: 3rem;
+  width: 3rem;
+  border: none;
+  position: absolute;
+  top: 10px;
+  left: 250px;
+  cursor: pointer;
+}
+
+.search-box {
+  border: none;
+  line-height: 5rem;
+  margin: 0 0 0 3rem;
+  width: 20%;
+  outline: none;
+}
+
+.search-tool {
+  position: relative;
+  display: flex;
+}
+
+.banner-info {
+  font-size: 1.5rem;
+  line-height: 3rem;
+  margin: 10rem 0 3rem 3rem;
+}
+
+.banner-info-par {
+  margin: 0 0 3rem 0;
+}
+
+.detail-btn {
+  background-color: #463232;
+  color: #fff;
+  width: 20rem;
+  height: 5rem;
+  margin: 5rem 0 0 3rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 10px 10px 60px #000;
+}
+
+.social-media-icons {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  line-height: 3rem;
+  bottom: 0;
+  right: 0;
+  margin: 0 3rem 0 0;
+  font-size: 1.5rem;
+  color: #463232;
+}
+
+.logos {
+  display: flex;
+  flex-direction: column;
+  background-color: #fef6f0;
+  height: 40vh;
+  width: 100%;
+}
+
+.logos-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 3rem 0 3rem 0;
+}
+
+.logos-img {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.logos-img > img:first-child {
+  width: 20rem;
+  height: 15rem;
+}
+
+.logos-img > img:nth-child(2) {
+  width: 20rem;
+  height: 15rem;
+}
+
+.logos-img > img:nth-child(3) {
+  width: 20rem;
+  height: 15rem;
+}
+
+.logos-img > img:nth-child(4) {
+  width: 20rem;
+  height: 15rem;
+}
+
+.logos-img > img:nth-child(5) {
+  width: 20rem;
+  height: 15rem;
+}
+
+.logos-img > img:last-child {
+  width: 20rem;
+  height: 15rem;
+}
+
+.about-us {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.about-us-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-us-info h1 {
+  font-size: 5rem;
+}
+
+.buy-btn {
+  background-color: #463232;
+  color: #fff;
+  width: 20rem;
+  height: 5rem;
+  margin: 5rem 0 0 3rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 10px 10px 60px #000;
+}
+
+.buy-img {
+  width: 50rem;
+  height: 50rem;
+  margin: 3rem 5rem 0 0;
+}
+
+.read-more-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.read-more-btn {
+  background-color: transparent;
+  color: #463232;
+  width: 20rem;
+  height: 5rem;
+  margin: 5rem 0 0 3rem;
+  border: 1px solid #463232;
+  outline: none;
+  cursor: pointer;
+}
+
+.read-more-img {
+  width: 50rem;
+  height: 50rem;
+  margin: 3rem 0 3rem 0;
+}
+
+.product-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0 2rem 0;
+}
+
+.product-header h1 {
+  font-size: 5rem;
+  margin-bottom: 2rem;
+}
+
+.express-tonic-main {
+  display: flex;
+  flex-direction: column;
+}
+
+.express-tonic-img {
+  height: 50rem;
+  width: 50rem;
+  margin: 3rem 0 0 5rem;
+}
+
+.express-tonic-main h2 {
+  color: #463232;
+  margin: 3rem 0 0 5rem;
+}
+
+.express-tonic-main p {
+  margin: 3rem 0 0 5rem;
+}
+
+.express-info {
+  display: flex;
+  flex-direction: row;
+}
+
+.info-bar-organic-products {
+  display: flex;
+  flex-direction: column;
+  margin: 3rem 0 0 5rem;
+}
+
+.info-bar-organic-products h4 {
+  color: #245864;
+  font-size: 2.5rem;
+}
+
+.underline {
+  border-bottom: 1px solid #463232;
+  margin: 0.5rem 0 0.5rem 0;
+}
+
+.info-bar-sales {
+  display: flex;
+  flex-direction: column;
+  margin: 3rem 0 0 5rem;
+}
+
+.info-bar-sales h4 {
+  color: #245864;
+  font-size: 2.5rem;
+}
+
+.info-bar-customers {
+  display: flex;
+  flex-direction: column;
+  margin: 3rem 0 0 5rem;
+}
+
+.info-bar-customers h4 {
+  color: #245864;
+  font-size: 2.5rem;
+}
+
+.info-bar-btnS {
+  display: flex;
+  flex-direction: row;
+  margin: 0 0 0 2rem;
+}
+
+.product-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.counter-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 15rem;
+  background-color: #fef6f0;
+  margin: 5rem 0 5rem 0;
+}
+
+.organic-product-counter {
+  border-right: 1px solid #463232;
+  padding: 0 5rem 0 5rem;
+}
+
+.international-counter {
+  border-right: 1px solid #463232;
+  padding: 0 5rem 0 5rem;
+}
+
+.sales-counter {
+  border-right: 1px solid #463232;
+  padding: 0 5rem 0 5rem;
+}
+
+.provide-product-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.provide-product-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.provide-product-info h1 {
+  font-size: 5rem;
+  margin: 3rem 0;
+}
+
+.provide-product-info p {
+  margin: 3rem 3rem;
+}
+
+.provide-product-img {
+  width: 50rem;
+  height: 50rem;
+  box-shadow: -30px 30px #fef6f0;
+  margin: 0 0 8rem 0;
+}
+
+.comment-container {
+  width: 100%;
+  height: 60rem;
+  background-color: #fef6f0;
+}
+
+.comment-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.comment-container h1 {
+  font-size: 5rem;
+  margin: 1.5rem 0;
+}
+
+.arrow-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.arrow-right {
+  display: flex;
+  justify-content: flex-end;
+  background-color: transparent;
+  border: none;
+  font-size: 2.5rem;
+  padding: 1rem;
+}
+
+.arrow-left {
+  display: flex;
+  justify-content: flex-end;
+  background-color: transparent;
+  border: none;
+  font-size: 2.5rem;
+  padding: 1rem;
+}
+
+.customer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.customer {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  width: 30%;
+  margin: 0 3rem;
+  padding: 2rem 0;
+}
+
+.customer p {
+  text-align: justify;
+  padding: 2rem;
+}
+
+.customer-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.info-header {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 2rem;
+}
+
+.info-header h4 {
+  color: #463232;
+}
+
+.customer-info img {
+  width: 15%;
+  height: 60%;
+  border-radius: 5rem;
+}
+
+.star {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.checked {
+  color: orange;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 20rem 0 0 0;
+}
+
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  margin: 0 3rem;
+}
+
+.footer-social-media-icons {
+  font-size: 3rem;
+  margin: 3rem 0;
+}
+
+.footer-menu li {
+  display: block;
+  padding: 0.5rem 0;
+}
+
+.footer-category li {
+  display: block;
+  padding: 0.5rem 0;
+}
+
+.footer-about-us li {
+  display: block;
+  padding: 0.5rem 0;
+}
+
+.footer-underline {
+  width: 80%;
+  height: 1px;
+  background-color: #000;
+}
+
+.copywrite {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3rem 0;
+}
+/*# sourceMappingURL=main.css.map */

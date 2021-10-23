@@ -1,0 +1,76 @@
+
+
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+}
+
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: inline;
+}
+
+p {
+  font-size: 1.5rem;
+  line-height: 3rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+span {
+  color: rgb(121, 120, 120);
+  font-size: 1rem;
+}
+
+$color-cream: #f7d5c3;
+$color-light-cream: #fef6f0;
+$color-brown: #463232;
+$color-white: #fff;
+$color-black: #000;
+$color-green: #245864;
+$color-gray: #686767;
+
+@mixin border-right {
+  border-right: 1px solid $color-brown;
+}
+@mixin displayFlex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+@mixin buyButton {
+  background-color: #463232;
+  color: #fff;
+  width: 20rem;
+  height: 5rem;
+  margin: 5rem 0 0 3rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 10px 10px 60px #000;
+}
+
+@mixin infoBar {
+  display: flex;
+  flex-direction: column;
+  margin: 3rem 0 0 5rem;
+}
+
+@mixin infoBarColor {
+  color: $color-green;
+  font-size: 2.5rem;
+}
+
+@mixin columnDisplay {
+  display: flex;
+  flex-direction: column;
+  
+}
